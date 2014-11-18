@@ -7,7 +7,7 @@ WARNING: jgit-chef is not install 'jre(Java Runtime Environment)', but jgit need
 Attributes
 ----------
 
-#### jgit-chef::default
+#### jgit-chef::install
 <table>
   <tr>
     <th>Key</th>
@@ -25,19 +25,19 @@ Attributes
     <td><tt>['jgit']['source']</tt></td>
     <td>String</td>
     <td>URL of jgit</td>
-    <td><tt>"https://repo.eclipse.org/content/groups/releases//org/eclipse/jgit/org.eclipse.jgit.pgm/3.5.2.201411120430-r/org.eclipse.jgit.pgm-3.5.2.201411120430-r.sh"</tt></td>
+    <td><tt>"https://github.com/team-lab/jgit/releases/download/v3.6.0.201411121045-token3-lsremote/jgit"</tt></td>
   </tr>
   <tr>
     <td><tt>['jgit']['checksum']</tt></td>
     <td>String</td>
     <td>checksum of jgit binary</td>
-    <td><tt>"284e714d8a481204d1c986f5debc56f5101df769f865a616721e4d74877ae59a"</tt></td>
+    <td><tt>"b48824625b24792a6155e362b824ae4169b6213abee3d14682bc302b2de16853"</tt></td>
   </tr>
 </table>
 
 Usage
 -----
-#### jgit-chef::default
+#### jgit-chef::install
 
 Just include `jgit-chef` in your node's `run_list`:
 
@@ -46,7 +46,7 @@ Just include `jgit-chef` in your node's `run_list`:
   "name":"my_node",
   "run_list": [
     "recipe[java]"
-    "recipe[jgit-chef]"
+    "recipe[jgit-chef::install]"
   ]
 }
 ```
