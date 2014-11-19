@@ -1,8 +1,23 @@
 jgit-chef Cookbook
 ==================
 Install jgit.sh
+Clone from Amazon s3.
 
-WARNING: jgit-chef is not install 'jre(Java Runtime Environment)', but jgit need jre.
+Resource
+-----
+#### jgit resource
+
+```ruby
+jgit "/app/app_name" do
+  repository "amazon-s3://IAM@backet-name/app.git"
+  revision "master"
+  action :sync
+end
+```
+
+jgit resource is extend from git resource.
+see https://docs.getchef.com/resource_git.html
+
 
 Attributes
 ----------
@@ -35,7 +50,7 @@ Attributes
   </tr>
 </table>
 
-Usage
+Recipe
 -----
 #### jgit-chef::install
 
@@ -50,6 +65,10 @@ Just include `jgit-chef` in your node's `run_list`:
   ]
 }
 ```
+
+*WARNING* : jgit-chef::install is not install 'jre(Java Runtime Environment)', but jgit need jre.
+you need jre by othre recipe.
+
 
 Contributing
 ------------

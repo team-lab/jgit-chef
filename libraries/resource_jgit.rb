@@ -9,6 +9,10 @@ class Chef
         @resource_name = :jgit
         @provider = Chef::Provider::Jgit
       end
+
+      def whyrun_supported?
+        @provider.whyrun_supported?
+      end
     end
   end
 end
