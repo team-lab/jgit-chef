@@ -40,13 +40,13 @@ Attributes
     <td><tt>['jgit']['source']</tt></td>
     <td>String</td>
     <td>URL of jgit releases</td>
-    <td><tt>"https://github.com/team-lab/jgit/releases/download/v3.6.0.201411121045-token3-lsremote/jgit"</tt></td>
+    <td><tt>"https://github.com/team-lab/jgit/releases/download/v3.6.0.201411121045-token4-env4/jgit"</tt></td>
   </tr>
   <tr>
     <td><tt>['jgit']['checksum']</tt></td>
     <td>String</td>
     <td>checksum of jgit binary</td>
-    <td><tt>"4007728e35c49c069095bdc1bf4f5c8a537722c4bf955af72c33cb15d7f81766"</tt></td>
+    <td><tt>"03548ab0660fb275c5cbf260cb6f7a41412f8fb4b11016ce6025bb2336566b52"</tt></td>
   </tr>
 </table>
 
