@@ -5,7 +5,7 @@ This file is used to list changes made in each version of the jgit-chef cookbook
 
 0.1.0
 -----
-- [nazoking] - Initial release of jgit-chef
+- [nazoking] - Initial release of jgit
 
 - - -
 Check the [Markdown Syntax Guide](http://daringfireball.net/projects/markdown/syntax) for help with Markdown.

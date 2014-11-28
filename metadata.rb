@@ -1,4 +1,4 @@
-name             'jgit-chef'
+name             'jgit'
 maintainer       'nazoking'
 maintainer_email 'nazoking@gmail.com'
 license          'public domain'

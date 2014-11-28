@@ -1,4 +1,4 @@
-jgit-chef Cookbook
+jgit Cookbook
 ==================
 Install jgit.sh
 Clone from Amazon s3.
@@ -22,7 +22,7 @@ see https://docs.getchef.com/resource_git.html
 Attributes
 ----------
 
-#### jgit-chef::install
+#### jgit::install
 <table>
   <tr>
     <th>Key</th>
@@ -52,9 +52,9 @@ Attributes
 
 Recipe
 -----
-#### jgit-chef::install
+#### jgit::install
 
-Just include `jgit-chef` in your node's `run_list`:
+Just include `jgit` in your node's `run_list`:
 
 ```json
 {
@@ -66,14 +66,13 @@ Just include `jgit-chef` in your node's `run_list`:
 }
 ```
 
-*WARNING* : jgit-chef::install is not install 'jre(Java Runtime Environment)', but jgit need jre.
+*WARNING* : jgit::install is not install 'jre(Java Runtime Environment)', but jgit need jre.
 you need jre by othre recipe.
 
 
 Contributing
 ------------
 
-e.g.
 1. Fork the repository on Github
 2. Create a named feature branch (like `add_component_x`)
 3. Write your change
